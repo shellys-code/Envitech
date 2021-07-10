@@ -32,115 +32,115 @@ namespace Envitech
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.labelDateFrom = new System.Windows.Forms.Label();
+            this.dateTimePickerFrom = new System.Windows.Forms.DateTimePicker();
+            this.labelDateTo = new System.Windows.Forms.Label();
+            this.dateTimePickerTo = new System.Windows.Forms.DateTimePicker();
+            this.labelField = new System.Windows.Forms.Label();
+            this.comboBoxField = new System.Windows.Forms.ComboBox();
+            this.labelOperator = new System.Windows.Forms.Label();
+            this.comboBoxOperator = new System.Windows.Forms.ComboBox();
+            this.labelValue = new System.Windows.Forms.Label();
             this.numericUpDown = new System.Windows.Forms.NumericUpDown();
             this.btnReset = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonReport = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // labelDateFrom
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(388, 46);
-            this.label1.Name = "label1";
-            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label1.Size = new System.Drawing.Size(47, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "מתאריך";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CustomFormat = "dd/MM/yyyy";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(151, 39);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(172, 20);
-            this.dateTimePicker1.TabIndex = 1;
-            this.dateTimePicker1.Value = DateTimePicker.MinimumDateTime;
+            this.labelDateFrom.AutoSize = true;
+            this.labelDateFrom.Location = new System.Drawing.Point(388, 46);
+            this.labelDateFrom.Name = "labelDateFrom";
+            this.labelDateFrom.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.labelDateFrom.Size = new System.Drawing.Size(47, 13);
+            this.labelDateFrom.TabIndex = 0;
+            this.labelDateFrom.Text = "מתאריך";
+            this.labelDateFrom.TextAlign = System.Drawing.ContentAlignment.TopRight;
 
             // 
-            // label2
+            // dateTimePickerFrom
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(378, 104);
-            this.label2.Name = "label2";
-            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label2.Size = new System.Drawing.Size(57, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "עד תאריך";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.dateTimePickerFrom.CustomFormat = "dd/MM/yyyy";
+            this.dateTimePickerFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerFrom.Location = new System.Drawing.Point(151, 39);
+            this.dateTimePickerFrom.Name = "dateTimePickerFrom";
+            this.dateTimePickerFrom.Size = new System.Drawing.Size(172, 20);
+            this.dateTimePickerFrom.TabIndex = 1;
+            this.dateTimePickerFrom.Value = DateTimePicker.MinimumDateTime;
+
             // 
-            // dateTimePicker2
+            // labelDateTo
             // 
-            this.dateTimePicker2.CustomFormat = "dd/MM/yyyy";
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(151, 104);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(171, 20);
-            this.dateTimePicker2.TabIndex = 3;
-            this.dateTimePicker1.Value = DateTime.Now;
+            this.labelDateTo.AutoSize = true;
+            this.labelDateTo.Location = new System.Drawing.Point(378, 104);
+            this.labelDateTo.Name = "labelDateTo";
+            this.labelDateTo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.labelDateTo.Size = new System.Drawing.Size(57, 13);
+            this.labelDateTo.TabIndex = 2;
+            this.labelDateTo.Text = "עד תאריך";
+            this.labelDateTo.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // label3
+            // dateTimePickerTo
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(402, 183);
-            this.label3.Name = "label3";
-            this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label3.Size = new System.Drawing.Size(30, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "שדה";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.dateTimePickerTo.CustomFormat = "dd/MM/yyyy";
+            this.dateTimePickerTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerTo.Location = new System.Drawing.Point(151, 104);
+            this.dateTimePickerTo.Name = "dateTimePickerTo";
+            this.dateTimePickerTo.Size = new System.Drawing.Size(171, 20);
+            this.dateTimePickerTo.TabIndex = 3;
+            this.dateTimePickerFrom.Value = DateTime.Now;
             // 
-            // comboBox1
+            // labelField
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(151, 175);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(171, 21);
-            this.comboBox1.TabIndex = 5;
-            
+            this.labelField.AutoSize = true;
+            this.labelField.Location = new System.Drawing.Point(402, 183);
+            this.labelField.Name = "labelField";
+            this.labelField.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.labelField.Size = new System.Drawing.Size(30, 13);
+            this.labelField.TabIndex = 4;
+            this.labelField.Text = "שדה";
+            this.labelField.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // label4
+            // comboBoxField
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(384, 253);
-            this.label4.Name = "label4";
-            this.label4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label4.Size = new System.Drawing.Size(51, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "אופרטור";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.comboBoxField.FormattingEnabled = true;
+            this.comboBoxField.Location = new System.Drawing.Point(151, 175);
+            this.comboBoxField.Name = "comboBoxField";
+            this.comboBoxField.Size = new System.Drawing.Size(171, 21);
+            this.comboBoxField.TabIndex = 5;
+
             // 
-            // comboBox2
+            // labelOperator
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(151, 250);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(171, 21);
-            this.comboBox2.TabIndex = 7;
+            this.labelOperator.AutoSize = true;
+            this.labelOperator.Location = new System.Drawing.Point(384, 253);
+            this.labelOperator.Name = "labelOperator";
+            this.labelOperator.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.labelOperator.Size = new System.Drawing.Size(51, 13);
+            this.labelOperator.TabIndex = 6;
+            this.labelOperator.Text = "אופרטור";
+            this.labelOperator.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // label5
+            // comboBoxOperator
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(405, 318);
-            this.label5.Name = "label5";
-            this.label5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label5.Size = new System.Drawing.Size(27, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "ערך";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.comboBoxOperator.FormattingEnabled = true;
+            this.comboBoxOperator.Location = new System.Drawing.Point(151, 250);
+            this.comboBoxOperator.Name = "comboBox2";
+            this.comboBoxOperator.Size = new System.Drawing.Size(171, 21);
+            this.comboBoxOperator.TabIndex = 7;
             // 
-            // textBox1
+            // labelValue
+            // 
+            this.labelValue.AutoSize = true;
+            this.labelValue.Location = new System.Drawing.Point(405, 318);
+            this.labelValue.Name = "labelValue";
+            this.labelValue.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.labelValue.Size = new System.Drawing.Size(27, 13);
+            this.labelValue.TabIndex = 8;
+            this.labelValue.Text = "ערך";
+            this.labelValue.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // numericUpDown
             // 
             this.numericUpDown.Location = new System.Drawing.Point(151, 318);
             this.numericUpDown.Name = "numericUpDown";
@@ -157,33 +157,33 @@ namespace Envitech
             this.btnReset.Text = "נקה טופס";
             this.btnReset.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // buttonReport
             // 
-            this.button2.Location = new System.Drawing.Point(290, 387);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "הצג";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.btnDisplay_Click);
+            this.buttonReport.Location = new System.Drawing.Point(290, 387);
+            this.buttonReport.Name = "buttonReport";
+            this.buttonReport.Size = new System.Drawing.Size(75, 23);
+            this.buttonReport.TabIndex = 11;
+            this.buttonReport.Text = "הצג";
+            this.buttonReport.UseVisualStyleBackColor = true;
+            this.buttonReport.Click += new System.EventHandler(this.btnDisplay_Click);
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(537, 450);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonReport);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.numericUpDown);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelValue);
+            this.Controls.Add(this.comboBoxOperator);
+            this.Controls.Add(this.labelOperator);
+            this.Controls.Add(this.comboBoxField);
+            this.Controls.Add(this.labelField);
+            this.Controls.Add(this.dateTimePickerTo);
+            this.Controls.Add(this.labelDateTo);
+            this.Controls.Add(this.dateTimePickerFrom);
+            this.Controls.Add(this.labelDateFrom);
             this.Name = "FormMain";
             this.Text = "FormMain";
             this.ResumeLayout(false);
@@ -193,18 +193,18 @@ namespace Envitech
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelDateFrom;
+        private System.Windows.Forms.DateTimePicker dateTimePickerFrom;
+        private System.Windows.Forms.Label labelDateTo;
+        private System.Windows.Forms.DateTimePicker dateTimePickerTo;
+        private System.Windows.Forms.Label labelField;
+        private System.Windows.Forms.ComboBox comboBoxField;
+        private System.Windows.Forms.Label labelOperator;
+        private System.Windows.Forms.ComboBox comboBoxOperator;
+        private System.Windows.Forms.Label labelValue;
         private System.Windows.Forms.NumericUpDown numericUpDown;
         private System.Windows.Forms.Button btnReset;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonReport;
     }
 }
 

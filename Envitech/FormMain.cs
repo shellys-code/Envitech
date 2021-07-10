@@ -36,7 +36,7 @@ namespace Envitech
             {
                 while (row.Read())
                 {
-                    this.dateTimePicker1.Value = (DateTime)row["Date_Time"];
+                    this.dateTimePickerFrom.Value = (DateTime)row["Date_Time"];
                 }
             }
             dbHandler.Close();
@@ -47,9 +47,9 @@ namespace Envitech
             var values = dbHandler.GetAllValues();
             foreach (var value in values)
             {
-                comboBox1.Items.Add(value);
+                comboBoxField.Items.Add(value);
             }
-            comboBox1.SelectedIndex = 1;
+            comboBoxField.SelectedIndex = 0;
 
             dbHandler.Open();
             SqlDataReader row = dbHandler.GetAllOperators();
@@ -57,11 +57,11 @@ namespace Envitech
             {
                 while (row.Read())
                 {
-                    comboBox2.Items.Add(row["name"].ToString());
+                    comboBoxOperator.Items.Add(row["name"].ToString());
                 }
             }
             dbHandler.Close();
-            comboBox2.SelectedIndex = 1;
+            comboBoxOperator.SelectedIndex = 0;
 
         }
 
@@ -74,7 +74,7 @@ namespace Envitech
 
         private void btnDisplay_Click(object sender, EventArgs e)
         {
-            Filter filter = new Filter(dateTimePicker1.Value, dateTimePicker2.Value, comboBox1.SelectedItem.ToString(), comboBox2.SelectedItem.ToString(), numericUpDown.Value.ToString());
+            Filter filter = new Filter(dateTimePickerFrom.Value, dateTimePickerTo.Value, comboBoxField.SelectedItem.ToString(), comboBoxOperator.SelectedItem.ToString(), numericUpDown.Value.ToString());
             var formReport = new FormReport(dbHandler, filter);
             formReport.Show();
         }

@@ -46,8 +46,7 @@ namespace Envitech
 
             // Configure the details DataGridView so that its columns automatically
             // adjust their widths when the data changes.
-            reportDataGridView.AutoSizeColumnsMode =
-                DataGridViewAutoSizeColumnsMode.AllCells;
+            //reportDataGridView.AutoSizeColumnsMode =DataGridViewAutoSizeColumnsMode.AllCells;
 
         }
 
