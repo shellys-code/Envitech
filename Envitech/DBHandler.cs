@@ -115,7 +115,7 @@ namespace Envitech
             if (dt == null)
                 return table;
 
-
+            // calculate value - in case the value is not valid the status will be displayed
             foreach (DataRow row in dt.Rows)
             {
                 List<string> list = new List<string>();
