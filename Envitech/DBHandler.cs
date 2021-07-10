@@ -108,7 +108,7 @@ namespace Envitech
 
             DataTable table = new DataTable();
             table.Columns.Add("Time Stamp", typeof(string));
-            for (int i = 1; i <= 32; i++)
+            for (int i = 1; i <= (dt.Columns.Count-1)/2; i++)
             {
                 table.Columns.Add("Value" + i, typeof(string));
             }
@@ -116,12 +116,11 @@ namespace Envitech
                 return table;
 
 
-
             foreach (DataRow row in dt.Rows)
             {
                 List<string> list = new List<string>();
                 list.Add(((DateTime)row["Date_Time"]).ToString("yyyy-MM-dd HH:mm:ss.fff"));
-                for (int i = 1; i <= 32; i++)
+                for (int i = 1; i <= (dt.Columns.Count - 1) / 2; i++)
                 {
                     string value  = row["Value" + i].ToString();
                     int  status = int.Parse(row["Status" + i].ToString());
